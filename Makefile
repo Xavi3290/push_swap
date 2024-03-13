@@ -6,13 +6,13 @@
 #    By: xroca-pe <xroca-pe@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/01 15:12:35 by xroca-pe          #+#    #+#              #
-#    Updated: 2024/03/12 17:40:34 by xroca-pe         ###   ########.fr        #
+#    Updated: 2024/03/13 11:08:03 by xroca-pe         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = push_swap
 NAME_BONUS = checker
-CC = cc  
+CC = cc
 CFLAGS = -Wall -Werror -Wextra
 RM = rm -f
 INCLUDE = push_swap.h checker_bonus/checker.h Makefile

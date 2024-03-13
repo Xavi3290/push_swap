@@ -6,7 +6,7 @@
 /*   By: xroca-pe <xroca-pe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/11 16:48:11 by xroca-pe          #+#    #+#             */
-/*   Updated: 2024/03/12 17:38:47 by xroca-pe         ###   ########.fr       */
+/*   Updated: 2024/03/13 11:07:41 by xroca-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,6 +71,7 @@ int	main(int argc, char **argv)
 	while (line != NULL)
 	{
 		commands(&a, &b, line);
+		free(line);
 		line = get_next_line(0);
 	}
 	if (0 == stack_len(b) && is_sorted(a))
@@ -78,5 +79,6 @@ int	main(int argc, char **argv)
 	else
 		write(1, "KO\n", 3);
 	ft_free_stack(&a);
+	ft_free_stack(&b);
 	return (0);
 }
